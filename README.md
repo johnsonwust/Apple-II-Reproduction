@@ -49,6 +49,8 @@ Resistors → Diodes → Inductors → Capacitors → Transistors → IC Sockets
 部分芯片已经替代，请注意以下内容：
 - `H3`, `H4`, `H5`: Original **8T97** replaced by **74LS367**  
   原 8T97 被 74LS367 替代
+- **Only the two 257 chips near the keyboard connector remain 257s; the other three are replaced with 157s.**  
+  仅键盘接口附近的两个 257 芯片使用原型号，其余三个 257 全部使用 157 替代
 - `F11`, `F12`: Replaced by **ROM adapter boards**, others can be left empty  
   使用 ROM 替代板插接，其他 ROM 可悬空
 - `B2`: 74LS86 uses **oscillator adapter board**  
