@@ -13,6 +13,9 @@ This project aims to replicate the Apple II Rev 0 motherboard as faithfully as p
 
 该项目旨在尽可能还原 Apple II Rev 0 主板设计。由于部分芯片与器件难以获得或存在兼容性问题，我们做了一些小改动，但整体外观与功能尽可能保持一致。
 
+
+![图片描述](./images/whole.jfif)
+
 ---
 
 ## 📋 Pre-Soldering Checklist  
@@ -60,6 +63,10 @@ Resistors → Diodes → Inductors → Capacitors → Transistors → IC Sockets
 - `A5`: Character ROM uses adapter board  
   字符库 ROM 也插接替代板
 
+![图片描述](./images/whole.jfif)
+
+  
+
 - 🔄 **Sockets**  
 - IC sockets `A5 dip24`, `A5 dip16`, `J14 dip16`: recommend using **round-hole sockets**  
   建议使用圆孔IC座
@@ -68,6 +75,8 @@ Resistors → Diodes → Inductors → Capacitors → Transistors → IC Sockets
 
 - 📎 **Watch for socket orientation** (notch direction). Almost all ICs are oriented **downward** when the board is upright.  
 注意IC座缺口方向，正常情况下，板正置时所有IC（除横放）均朝下。
+
+![图片描述](./images/right.jpg)
 
 - 🔌 **Pin headers and resistive arrays** must be oriented correctly. The **square pad** indicates the start position.  
 排阻注意方向，焊盘方形端为起始方向，与小点标记对应。
@@ -81,6 +90,9 @@ The original Apple II oscillator circuit (shown below) is not to be soldered. Mo
 
 如下图所示为原始时钟电路区域，请留空不要焊接。当前时钟信号由小板产生并通过 74LS86 转接，原始电路不兼容现代晶振。
 
+![图片描述](./images/clock.jpg)
+![图片描述](./images/clock1.jpg)
+
 ---
 
 ## 🔍 Component ID Guide  
@@ -90,8 +102,14 @@ The original Apple II oscillator circuit (shown below) is not to be soldered. Mo
 电容、电阻等均有清晰标识。
 - For unlabeled white outline capacitors, solder **104 ceramic capacitors**.  
 无标注但有白线框图的焊接104。
+![图片描述](./images/104.jpg)
+- The red circle one is 224 capacitors**
+红色圈出的电容焊接224
+![图片描述](./images/224.jpg)
 - Diodes may be substituted with **common small-signal diodes**.  
 二极管可用普通小信号二极管替代。
+![图片描述](./images/part.jpg)
+
 
 ---
 
@@ -104,6 +122,8 @@ The original Apple II oscillator circuit (shown below) is not to be soldered. Mo
  接线时电源端子突起一侧向上，接错会严重烧毁器件。
 3. 🧯 After full connection, recheck every pin and direction before applying power.  
  所有接线完成后，请再次确认方向与引脚无误再通电。
+![图片描述](./images/power.jpg)
+![图片描述](./images/power2.jpg)
 
 ---
 
@@ -112,6 +132,9 @@ The original Apple II oscillator circuit (shown below) is not to be soldered. Mo
 
 - Keyboard converter cable **must be connected correctly** — **reversed = damage**.  
 键盘转换器接线方向错误会烧毁，请特别注意方向。
+![图片描述](./images/keyboard.jpg)
+![图片描述](./images/keyboard1.jpg)
+![图片描述](./images/keyboard2.jpg)
 - When a floppy disk controller card is inserted, the system **boots automatically from virtual floppy**.  
 插入软驱卡后会自动从虚拟软驱启动。
 - If no floppy controller is present, press `Ctrl + Backspace` to boot into onboard BASIC.  
