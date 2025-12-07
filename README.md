@@ -4,6 +4,30 @@
 A faithful reproduction of the original Apple II Rev 0 motherboard, designed for vintage computing enthusiasts and collectors.  
 这是对 Apple II 最初 Rev 0 主板的忠实复刻，专为复古计算机爱好者与收藏家打造。
 
+# ⚠️⚠️⚠️ **CRITICAL POWER WARNING — MUST READ BEFORE USE!**  
+# ⚠️⚠️⚠️ **严重上电警告 — 使用前务必阅读！**
+
+### 🔥 **Do NOT power on / reboot the motherboard by plugging or unplugging the DC output of the power adapter.**  
+### 🔥 **禁止通过插拔电源适配器的 DC 端来为主板上电或重启！**
+
+Doing so will cause **high-voltage spikes**, which can **instantly destroy the RAM chips and other components**.  
+You **MUST** perform power on/off or reboot **ONLY from the AC side** of the power supply.
+
+使用 DC 端插拔通电会产生**瞬间高压尖峰**，会**直接烧毁内存芯片及其他器件**。  
+请务必 **只通过电源的 AC 端** 进行开关机或重启操作。
+
+### ✅ **Correct method (safe):**  
+- Switch ON/OFF from **AC input**  
+- Use power strip switch / wall socket switch  
+- Control power only at the **AC side**
+
+### ❌ **Wrong method (dangerous):**  
+- ❌ 插拔 DC 插头  
+- ❌ 依靠 DC 端反复接触重启  
+- ❌ 通过 DC 输出做任何形式的通断电  
+→ **这些行为都会导致严重损坏！**
+
+
 ---
 
 ## 📦 Project Description  
