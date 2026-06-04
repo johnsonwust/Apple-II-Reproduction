@@ -112,8 +112,6 @@ Resistors → Diodes → Inductors → Capacitors → Transistors → IC Sockets
 
 The original Apple II oscillator circuit (shown below) is not to be soldered. Modern crystals are incompatible. Clock is provided via an adapter module with 74LS86.
 
-如下图所示为原始时钟电路区域，请留空不要焊接。当前时钟信号由小板产生并通过 74LS86 转接，原始电路不兼容现代晶振。
-
 ![图片描述](./images/clock.jpg)
 ![图片描述](./images/clock1.jpg)
 
