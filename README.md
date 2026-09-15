@@ -1,44 +1,37 @@
 # Apple II Rev 0 Motherboard Replica  
 # Apple II Rev 0 主板复刻项目
 
-A faithful reproduction of the original Apple II Rev 0 motherboard, designed for vintage computing enthusiasts and collectors.  
-这是对 Apple II 最初 Rev 0 主板的忠实复刻，专为复古计算机爱好者与收藏家打造。
+A faithful reproduction of the original Apple II Rev 0 motherboard, designed for vintage computing enthusiasts, collectors, educators, and hardware builders. This project is intended to save builders the hardest parts of an Apple II Rev 0 build: sourcing rare chips, validating old parts, and debugging unknown component failures.  
+这是对 Apple II 最初 Rev 0 主板的忠实复刻，专为复古计算机爱好者、收藏家、教育者和硬件制作者打造。这个项目的目标是帮你省掉 Rev 0 复刻中最耗时、风险最高的部分：寻找稀缺芯片、验证旧器件、排查未知芯片故障。
 
-# ⚠️⚠️⚠️ **CRITICAL POWER WARNING — MUST READ BEFORE USE!**  
-# ⚠️⚠️⚠️ **严重上电警告 — 使用前务必阅读！**
+## ✅ Build Confidence First  
+## ✅ 先建立装配信心
 
-### 🔥 **Do NOT power on / reboot the motherboard by plugging or unplugging the DC output of the power adapter.**  
-### 🔥 **禁止通过插拔电源适配器的 DC 端来为主板上电或重启！**
+- ✅ All critical vintage/used ICs included with the kit are tested before shipment.  
+  ✅ 套件中关键 vintage/used IC 发货前都会经过测试。
+- ✅ Complete BOM and curated parts are included, so you do not need to hunt rare chips one by one.  
+  ✅ 提供完整 BOM 和整理好的元件配置，不需要自己逐个寻找稀缺芯片。
+- ✅ Tested replacement circuits and adapter boards are included where original parts are scarce or unreliable.  
+  ✅ 对于难买或不稳定的原始器件，套件包含已经验证的替代电路和转接板方案。
+- ✅ Detailed assembly notes, photos, and reference material are provided in this repository.  
+  ✅ 本仓库提供详细装配说明、照片和参考资料。
+- ✅ Support is available if you have questions during assembly or first bring-up.  
+  ✅ 如果装配或首次调试时有问题，可以联系支持。
+- ✅ A fully assembled and tested version is available for buyers who prefer a ready-built board.  
+  ✅ 如果不想自行焊接，也可以选择已经装配并测试完成的版本。
 
-Doing so will cause **high-voltage spikes**, which can **instantly destroy the RAM chips and other components**.  
-You **MUST** perform power on/off or reboot **ONLY from the AC side** of the power supply.
-
-使用 DC 端插拔通电会产生**瞬间高压尖峰**，会**直接烧毁内存芯片及其他器件**。  
-请务必 **只通过电源的 AC 端** 进行开关机或重启操作。
-
-### ✅ **Correct method (safe):**  
-- Switch ON/OFF from **AC input**  
-- Use power strip switch / wall socket switch  
-- Control power only at the **AC side**
-
-### ❌ **Wrong method (dangerous):**  
-- ❌ 插拔 DC 插头  
-- ❌ 依靠 DC 端反复接触重启  
-- ❌ 通过 DC 输出做任何形式的通断电  
-→ **这些行为都会导致严重损坏！**
-
+![图片描述](./images/whole.jfif)
 
 ---
 
 ## 📦 Project Description  
 ## 📦 项目简介
 
-This project aims to replicate the Apple II Rev 0 motherboard as faithfully as possible. Due to component and chip sourcing limitations, minor modifications have been made for compatibility while preserving functionality and appearance.  
+This project aims to replicate the Apple II Rev 0 motherboard as faithfully as practical while accounting for modern sourcing limits. Original Apple II parts are increasingly scarce, so the project uses a combination of reproduction PCB work, tested vintage components, compatible substitute circuits, and documented adapter boards.  
+该项目旨在尽可能还原 Apple II Rev 0 主板设计，同时兼顾今天的元件采购现实。原始 Apple II 器件越来越稀缺，因此本项目结合了复刻 PCB、经过测试的 vintage 元件、兼容替代电路以及有文档说明的转接板方案。
 
-该项目旨在尽可能还原 Apple II Rev 0 主板设计。由于部分芯片与器件难以获得或存在兼容性问题，我们做了一些小改动，但整体外观与功能尽可能保持一致。
-
-
-![图片描述](./images/whole.jfif)
+The technical notes below are included to help you assemble and operate the board safely. They are not meant to make the project feel risky; they document the exact checks that reduce risk.  
+下面的技术注意事项是为了帮助你安全装配和使用主板。它们不是为了增加风险感，而是把降低风险所需的检查步骤明确写出来。
 
 ---
 
@@ -55,6 +48,27 @@ This project aims to replicate the Apple II Rev 0 motherboard as faithfully as p
 电阻 → 二极管 → 电感 → 电容 → 三极管 → IC 座 → 接口端子 → 50针插槽
 Resistors → Diodes → Inductors → Capacitors → Transistors → IC Sockets → Connectors → Slot Pins
 
+---
+
+## ⚠️ Power Safety Note — Please Read Before Use  
+## ⚠️ 上电安全说明 — 使用前请阅读
+
+### Do NOT power on, power off, or reboot the motherboard by plugging or unplugging the DC output of the power adapter.  
+### 禁止通过插拔电源适配器的 DC 端来为主板上电、断电或重启。
+
+Doing so can create high-voltage spikes that may damage RAM chips and other components. Power control should be done only from the AC side of the power supply.  
+使用 DC 端插拔通电可能产生瞬间高压尖峰，损坏内存芯片及其他器件。请只通过电源的 AC 端进行开关机或重启操作。
+
+### ✅ Correct method (safe):  
+- Switch ON/OFF from **AC input**  
+- Use power strip switch / wall socket switch  
+- Control power only at the **AC side**
+
+### ❌ Wrong method (dangerous):  
+- ❌ 插拔 DC 插头  
+- ❌ 依靠 DC 端反复接触重启  
+- ❌ 通过 DC 输出做任何形式的通断电  
+→ **这些行为都会导致严重损坏！**
 
 ---
 
@@ -88,8 +102,6 @@ Resistors → Diodes → Inductors → Capacitors → Transistors → IC Sockets
   字符库 ROM 也插接替代板
 
 ![图片描述](./images/whole.jfif)
-
-  
 
 - 🔄 **Sockets**  
 - IC sockets `A5 dip24`, `A5 dip16`, `J14 dip16`: recommend using **round-hole sockets**  
@@ -131,7 +143,6 @@ The original Apple II oscillator circuit (shown below) is not to be soldered. Mo
 - Diodes may be substituted with **common small-signal diodes**.  
 二极管可用普通小信号二极管替代。
 ![图片描述](./images/part.jpg)
-
 
 ---
 
